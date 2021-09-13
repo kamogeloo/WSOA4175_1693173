@@ -60,6 +60,7 @@
       cursor: pointer;
       z-index: 2;
     }
+   
     .nav-links{
       position: fixed;
       height:100vh;
@@ -97,6 +98,34 @@
     li.fade{
         opacity:1;
       }
+      .row{
+          width: 100%;
+          height:90vh;
+          flex-direction: row;
+      }
+     
+      .giphy-embed{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 100px;
+        
+    }
+    .right{
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+    .left {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    
+    }
+    .left p{
+        width: 100%;
+        margin-top: auto;
+    }
 }
 
  .row{
