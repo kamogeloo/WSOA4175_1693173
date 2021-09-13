@@ -98,3 +98,31 @@
         opacity:1;
       }
 }
+
+ .row{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+ }
+.column{
+    float: left;
+ }
+
+ .left{
+     width: 50%;
+
+ }
+ .left p{
+     width: 58%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 150px;
+     
+ }
+ .right{
+     width: 50%;
+ }
+ .giphy-embed{
+     margin-top: 100px;
+     
+ }
