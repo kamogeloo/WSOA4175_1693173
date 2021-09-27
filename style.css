@@ -9,6 +9,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
+    perspective: 1000px;
   
   }
   /*First Page Styles*/
@@ -37,10 +38,19 @@
     text-decoration: none;
     color:white;
     font-size: 16px;
+    overflow: hidden;
+  }
+
+  .nav-links li a::after{
+    opacity: 1;
+    transform: translate3d(-100%, 0,0);
   }
   .nav-links li a:hover{
-    color: lightcoral;
+    border-bottom: 1px solid white;
+    transition: all 0.75s ease;
   }
+
+  
   @media screen and (max-width: 768px){
     nav{
       position: relative;
@@ -128,10 +138,14 @@
     }
 }
 
- .row{
+ .row, .second-row{
     height: 90vh;
     width: 100%;
     display: flex;
+    
+ }
+ .row{
+   border-bottom: 1px solid white;
  }
 .column{
     float: left;
@@ -139,6 +153,7 @@
 
  .left{
      width: 50%;
+     
 
  }
  .left p{
@@ -146,12 +161,81 @@
      margin-left: auto;
      margin-right: auto;
      margin-top: 150px;
+     color: rgb(90, 90, 90);
+     
      
  }
  .right{
      width: 50%;
- }
- .giphy-embed{
-     margin-top: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transform-style: preserve-3d;
      
  }
+ .giphy-embed{
+     
+     width: 340px;
+     height: 320px;
+     transition: all 0.75s ease-out;
+     
+     
+ }
+ .second{
+   width: 100%;
+   height: 110vh;
+   
+ }
+ 
+ .second h1{
+   width: 10%;
+   padding: 10px;
+   margin-left: 450px;
+   display: block;
+   
+ }
+ .column{
+   width: 100%;
+   
+ }
+ .left-two{
+   width: 50%;
+   
+ }
+
+ .right-two{
+   width: 50%;
+   
+ }
+
+ .blog{
+   margin-top: 10vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+.blog img{
+  width: 50%;
+  height: 50%;
+  
+}
+.blog p{
+  font-size: 16px;
+  font-weight: lighter;
+  width: 220px;
+  height:200px;
+  margin-left: 5px;
+  text-overflow: ellipsis;
+  white-space:inherit;
+  overflow: hidden;
+}
+.readMore{
+  color: white;
+  margin-left: 350px;
+}
+.seeMore{
+  color: white;
+  margin-left: 450px;
+  
+}
