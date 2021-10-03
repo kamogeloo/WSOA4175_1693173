@@ -367,13 +367,13 @@
   .second{
     position: relative;
     width: 100%;
-    height:200vh;
+    height:150vh;
     flex-direction: column;
     z-index: -1;
     
   }
   .second-row{
-    height: 200vh;
+    height: 160vh;
     flex-direction: column;
     
   }
@@ -386,6 +386,9 @@
     
     width: 100%;
     
+  }
+  .left-two p{
+    margin-top: 50px;
   }
   .seeMore, .readMore{
     font-size: 16px !important;
