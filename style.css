@@ -9,6 +9,7 @@
     background: black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
     color: #dadada;
     perspective: 1000px;
     --links: #FDC37F;
@@ -21,11 +22,14 @@
     height: 10vh;
     
     
+    
+    
   }
   .logo{
-    width: 30px;
-    height: 30px;
-    margin-top:10px;
+    
+    width: 50px;
+    height: 50px;
+    margin-top:15px;
     margin-left:30px;
     filter: drop-shadow(-2px -2px 2px rgb(66, 66, 66));
    
@@ -42,7 +46,7 @@
   .nav-links li a{
     text-decoration: none;
     color: var(--links);
-    font-size: 16px;
+    font-size: 25px;
     overflow: hidden;
   }
 
@@ -116,6 +120,7 @@
       .row{
           width: 100%;
           height:90vh;
+          transform-style: preserve-3d;
           flex-direction: row;
       }
      
@@ -126,6 +131,7 @@
         
     }
     .right{
+      
         margin-left: auto;
         margin-right: auto;
         
@@ -154,6 +160,7 @@
  }
 .column{
     float: left;
+   
  }
 
  .left{
@@ -175,13 +182,13 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     transform-style: preserve-3d;
+    
      
  }
  .giphy-embed{
      
-     width: 340px;
-     height: 320px;
+     width: 70%;
+     height: 70%;
      transition: all 0.75s ease-out;
      
      
@@ -194,9 +201,9 @@
  }
  
  .second h1{
-   font-size: 40px;
-   width: 30%;
-   margin-top: 10px;
+  font-size: 60px;
+  width: 30%;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   
@@ -209,7 +216,16 @@
  }
  .left-two{
    width: 50%;
+  
    
+   
+ }
+
+ .left-two h2, .right-two h2{
+   width: 50%;
+   margin-top: 100px;
+   margin-left: auto;
+   margin-right: auto;
  }
 
  .right-two{
@@ -218,7 +234,7 @@
  }
 
  .blog{
-   margin-top: 20vh;
+   margin-top: 10px;
    width: 100%;
    display: flex;
    justify-content: center;
@@ -229,9 +245,10 @@
   height: 50%;
   
 }
+
 .blog p{
   margin-top: 40px;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: lighter;
   width: 220px;
   height:200px;
@@ -243,43 +260,56 @@
 .readMore{
   
   color: var(--links);
-  margin-left: 200px;
+  display:flex;
+  margin-top: 5px;
+  justify-content: center;
+  align-content: center;
   text-decoration: none;
 }
 .seeMore{
   color: var(--links);
-  margin-left: 450px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   text-decoration: none;
+  margin-top: -40px;
   
 }
 #rows{
   margin-top: -80px;
+ 
 }
 #rows img{
-  width: 45%;
-  height: 45%;
+  width: 50%;
+  height: 50%;
 }
 #articles{
+  margin-top: 80px;
   height: 80vh;
   width: 100%;
   border-bottom: none;
   
   
+  
 }
 #articles img{
-  margin-top: 100px;
+ width: 90%;
+ height: 100%;
   margin-left: 30px;
+  
 }
 #articles .left{
 
  height: 100%;
- width: 40%;
+ width: 50%;
+ background-color: var(--links);
 }
 #articles .right, .left-text{
   
   display: inline-block;
   height: 100%;
-  width: 60%;
+  width: 50%;
+  
 }
 #articles .left img{
   margin-top: 0px;
@@ -288,14 +318,20 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0px;
+}
+.left-text p{
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .blogTitle{
-  font-size: 90px;
+  font-size: 20vh;
   width: 60%;
-  height: 100vh;
+  margin-top: 10px;
   margin-left: auto;
   margin-right:auto; 
+  letter-spacing: 0.26rem;
+  
   
 }
 .second-part{

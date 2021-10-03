@@ -20,12 +20,13 @@ document.getElementById('menuItem').onclick = function() {
 const gif = document.querySelector('.giphy-embed');
 
 gif.addEventListener("mouseenter", (e) =>{
-    gif.style.transform = "translateZ(150px) translateX(-35px) translateY(20px)";
+    gif.style.transform = "translateZ(-150px)";
+    
     gif.style.filter = "drop-shadow(-1px -1px 8px gray)";
-})
+});
 
 gif.addEventListener("mouseleave", (e) =>{
-    gif.style.transform = "translateZ(0px)";
+    gif.style.transform = "translateZ(-20px)";
     gif.style.filter = "none";
-})
+});
 
