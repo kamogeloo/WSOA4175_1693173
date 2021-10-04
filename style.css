@@ -220,7 +220,7 @@
 
  height: 100%;
  width: 50%;
- background-color: var(--links);
+ 
 }
 #articles .right, .left-text{
   
@@ -246,8 +246,9 @@
   margin-bottom: 40px;
 }
 #nextParagraph{
-  margin-top: 180px;
+  margin-top: 160px;
 }
+
 #references{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -264,15 +265,6 @@
 }
 .second-part{
   height: 80vh;
-}
-@media screen and (max-width:360px){
-  body{
-    color: red;
-    
-  }
-  p{
-    font-size: 16px !important;
-  }
 }
 
 @media screen and (max-width: 768px){
