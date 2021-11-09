@@ -7,6 +7,9 @@
     
   }
   body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background: black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -14,6 +17,7 @@
     color: #dadada;
     perspective: 1000px;
     --links: #FDC37F;
+    --footer: rgb(17, 17, 17);
     
   
   }
@@ -83,7 +87,7 @@
  }
  .left p{
      width: 60%;
-     font-size: 30px;
+     font-size: 25px;
      margin-left: auto;
      margin-right: auto;
      margin-top: 250px;
@@ -116,7 +120,7 @@
    
  }
  
- .second h1{
+ /* .second h1, #blogs h1{
   font-size: 60px;
   width: 30%;
   margin-top: 20px;
@@ -125,13 +129,25 @@
   
 
    
+ } */
+ .second h1, #blogs h1{
+  font-size: 60px;
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 45%;
+
+  
+
+   
  }
+ 
  .column{
    width: 100%;
    
  }
  .left-two{
    width: 50%;
+
   
    
    
@@ -139,13 +155,17 @@
 
  .left-two h2, .right-two h2{
    width: 50%;
-   margin-top: 100px;
+   margin-top: 80px;
    margin-left: auto;
    margin-right: auto;
+   padding-top: 50px;
+  
  }
 
  .right-two{
    width: 50%;
+  
+
    
  }
 
@@ -155,10 +175,17 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   
+ 
  }
-.blog img{
-  width: 50%;
-  height: 50%;
+
+.blogone h2{
+ 
+ width: 80%;
+}
+figure img{
+  width: 100%;
+  height: 500px;
   
 }
 
@@ -182,17 +209,21 @@
   align-content: center;
   text-decoration: none;
 }
+
+
 .seeMore{
-  
-  padding: 15px;
+
+  padding: 20px;
   color: var(--links);
   display: flex;
-  justify-content: center;
-  align-content: center;
+  margin-left: 43%;
+  text-align: center;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: -20px;
+  width: 150px;
   
 }
+
 #rows{
   margin-top: -80px;
  
@@ -212,7 +243,7 @@
 }
 #articles img{
  width: 90%;
- height: 100%;
+ max-height: 100%;
   margin-left: 30px;
   
 }
@@ -237,7 +268,7 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 .left-text p{
   width: 80%;
@@ -246,15 +277,19 @@
   margin-bottom: 40px;
 }
 #nextParagraph{
-  margin-top: 180px;
+  margin-top: 10px;
+  
 }
 
 #references{
+  font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .blogTitle{
   font-size: 20vh;
+  border-bottom: 1px solid white;
+  padding-bottom: 50px;
   width: 60%;
   margin-top: 10px;
   margin-left: auto;
@@ -265,7 +300,133 @@
 }
 .second-part{
   height: 80vh;
+ 
 }
+
+footer{
+
+  display: block;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 15vh;
+  margin-top: auto;
+  font-size: 16px;
+  background: var(--footer);
+  
+}
+footer a{
+  font-size: 15px;
+  font-weight: smaller;
+  text-decoration: none;
+  color: #dadada;
+  padding:10px;
+}
+.fab{
+  margin-top: 50px;
+  padding-left: 15px
+
+}
+.fab:hover{
+  color: var(--links);
+}
+.copyright {
+  margin-left: 20%;
+  margin-top: -25px;
+}
+
+.second{
+  height: auto;
+  display: block;
+}
+.cards{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#card-container{
+  width: 50%;
+}
+.card-container{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+.card{
+  
+  margin-top: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 80%;
+  height:35rem;
+  margin-left: 10%;
+  text-overflow: ellipsis;
+  white-space:inherit;
+  overflow:scroll;
+  box-shadow: 0 4px 8px 0.5px rgba(0, 0,0,0.2);
+  transition: 0.3s;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(95, 95, 95, 0.2);
+}
+.card-button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+   font-family: inherit;
+   font-weight: bold;
+  background-color: rgb(63, 63, 63);
+  margin-left: 30%;
+  width: 40%;
+  height: 40%;
+  padding: 1.5rem;
+}
+.card-despription{
+  padding: 0px 1px;
+}
+.container{
+  padding: 2px 16px;
+}
+.card img{
+  width: 100%;
+  height: 20rem;
+object-fit: cover;
+}
+.thewrong img{
+  min-width: 50%;
+  max-height: 580px;
+  
+}
+::-webkit-scrollbar{
+  width: 15px;
+  border-color: white;
+}
+::-webkit-scrollbar-track-piece{
+  background: transparent;
+
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--footer);
+  border: 1px solid white;
+  height: 5%;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-corner{
+  background: transparent;
+}
+
 
 @media screen and (max-width: 768px){
   
@@ -273,6 +434,12 @@
     position: relative;
     height:10vh;
   }
+  body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
   .line{
     width:30px;
     height:3px;
@@ -282,7 +449,7 @@
   .hamburger{
     position: fixed;
     right: 5%;
-    top: 5%;
+    top: 1%;
     transform: translate(-5%, -50%);
     cursor: pointer;
     z-index: 2;
@@ -325,8 +492,23 @@
   li.fade{
       opacity:1;
     }
+    h1{
+     
+    }
     h2{
-      font-size: 30px !important;
+      font-size: 0px !important;
+      display: none;
+      
+    }
+    
+    figure{
+      margin-top: -50px;
+      margin-left: 20%;
+      
+    }
+    figure img, blog img{
+      min-width: 70%;
+      max-width: 25%;
     }
     p{
       font-size: 16px !important;
@@ -350,6 +532,12 @@
       
       
   }
+  .blogPost,.right p{
+    margin-top: 20px;
+  }
+  .blogPost-three{
+    margin-top: 110px;
+  }
   .left {
     max-height: 50%;
       margin-left: auto;
@@ -363,14 +551,17 @@
       margin-top: 100px;
   }
   .right img{
-    margin-top: 150px;
-    max-width: 50%;
-    height: 100%;
+  
+    margin-top: 15%;
+    margin-left: 20%;
+    min-width: 50%;
+    max-height: 50%;
   }
   .second{
     position: relative;
     width: 100%;
-    height:180vh;
+    min-height:370vh;
+    display: flex;
     flex-direction: column;
     z-index: -1;
     
@@ -393,17 +584,41 @@
   .left-two p{
     margin-top: 50px;
   }
+  .blog{
+    margin-top: 100px;
+   
+  }
+#homeblog{
+  margin-top: -100px;
+}
+  .readMore-two{
+    margin-top: 30px;
+  }
   .seeMore, .readMore{
     font-size: 16px !important;
   }
+ 
   .seeMore{
     margin-top: -80px;
     margin-bottom: 0px;
     padding: 15;
   }
-  .blogTitle{
-    font-size: 13vh;
+  .prototype{
+    margin-top: 50px;
   }
+
+  .blogTitle{
+    font-size: 12vh;
+  }
+  #references{
+    width: 90%;
+  }
+   #references h3{
+     font-size: 3vh;
+   }
+   #references li{
+     font-size: 2vh;
+   }
   #articles{
     position: relative;
     width: 100%;
@@ -414,7 +629,7 @@
   }
   #articles .left{
     width: 100%;
-    height: 100vh;
+    height: auto; /*100vh*/
     
   }
   #articles .left img{
@@ -424,7 +639,7 @@
   }
   #articles .right{
     width: 100%;
-    height: 100vh;
+    height: auto; /*100vh*/
   }
   #articles .right p{
     margin-top: 20px;
@@ -432,6 +647,24 @@
   .left-text{
     margin-top: -80px;
     width: 100%;
+    
+  }
+  footer{
+    width: 100%;
+    margin-top: auto;
+  }
+  .fab {
+    
+    font-size: 10px;
+  }
+  .copyright{
+    margin-left: 15%;
+    font-size: 10px;
+    margin-top: -15px;
+  }
+  .thewrong img{
+    min-width: 50%;
+    min-height: auto;
     
   }
  

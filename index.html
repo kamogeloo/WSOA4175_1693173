@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <title>Home Page</title>
 </head>
 <body>
@@ -15,7 +17,7 @@
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <img class="logo" src="LOGO kamo.png" alt="">
+       <a href="index.html"><img class="logo" src="LOGO kamo.png" alt=""></a> 
         <ul class="nav-links">
             <li id="menuItem"><a href="">Home</a></li>
             <li id="menuItem"><a href="#blogs">Blogs</a></li>
@@ -25,45 +27,67 @@
 
     <div class="row">
         <div class="column left">
-            <p>Welcome to my interactive media class website! On this website, I will be 
-                posting blogs about the web,I will also be showcasing internet art that I made.
+            <p>Welcome to my interactive media course website! On this website, I will be 
+                posting blogs about the web. I will also be showcasing internet art that I made, one example of such
+                art is this CSS ilustration and animation that is next to this text. 
             </p>
         </div>
         <div class="column right">
+            <figure>
         <img src="Gif css.gif" alt="" class="giphy-embed">
+    </figure>
         </div>
     </div>
-    <section class="second" id="blogs">
+    <section  id="blogs">
         <h1>BLOGS</h1>
         
         <div class="second-row">
-            <div class="column left-two">
-                <h2>The Role of Aesthetics in Web Design.</h2>
-                <div class="blog">
-                    
-                    <img src="animation-in-web-design.gif" alt="gif from https://ultimez.com/blog/wp-content/uploads/2016/08/animation-in-web-design.gif" width="320px" height="320px">
-               
-                            <p> In this article, Thorlacius states that she uses the concept aesthetics to refer to visual, sound and interactive means of effect; she argues that there is always visual communication in websites, that every element that is included and displayed in the interface of a website communicates something to the user (Thorlacius, 2007, pg.63). The colors, the type of typography that a designer uses, and even the placement of elements on a website, communicate something to the user; and it is for this reason that Thorlacius (2007) argues that it important for designer to have knowledge about visual communication. She argues that visual symbols are part our daily lives and that is why it is important for web designers to have knowledge of graphic effects and visual symbols (and semiotics) is crucial for designers, for the communication to the users to be intentional (Thorlacius, 2007, pg.63). </p>
-                           
+            <div class="cards">
+                <div class="card-container"><div class="card">
+                   <a href="blog1.html"> <img src="animation-in-web-design.gif" alt="" width="100%"></a>
+                     <div class="container">
+                         <h3><b>The Role Of Aesthetics in Web Design.</b></h3>
+                         <p>In this article, Thorlacius states that she uses the concept aesthetics to refer to visual, 
+                             sound and interactive means of effect; she argues that there is always visual communication 
+                             in websites, that every element that is included and displayed in the interface of a website 
+                             communicates something to the user (Thorlacius, 2007, pg.63). The colors, the type of typography
+                              that a designer uses, and even the placement of elements on a website, communicate something to 
+                              the user; and it is for this reason that Thorlacius (2007) argues that it important for designer 
+                              to have knowledge about visual communication. She argues that visual symbols are part our daily 
+                              lives and that is why it is important for web designers to have knowledge of graphic effects and 
+                              visual symbols (and semiotics) is crucial for designers,
+                              for the communication to the users to be intentional (Thorlacius, 2007, pg.63).</p>
+                     </div>
                 </div>
-                <a class="readMore" href="blog1.html">Read More</a>
             </div>
-            <div class="column right-two">
-                <h2>An Analysis of Internet Art.</h2>
-                <div class="blog">
-                    <img src="running css animation.gif" alt="running css animation from https://i.pinimg.com/originals/7e/86/7a/7e867ad410940f231923108bf6619832.gif" width="320px" height="320px">
-                    <p>In this artwork I see chaos, there are too many elements added,
-                        some in 2D and some in 3D, texts are overlapping on top of other texts, challenging the readability and the access to information. The artist used the colors neon pink and
-                         neon cyan for some texts that are overlapping, and according to a website called approval studio, those colors do not go together, because they are referred to as disturbing 
-                         and reckless, having multiple neon colors will have them fighting for the user’s attention. 
-                     Another color according to the article that does not go with neon pink is green, which is also present in the artwork.</p>
+                <div class="card-container"> <div class="card">
+                  <a href="analysis.html">  <img src="running css animation.gif" alt="" width="100%"></a>
+                     <div class="container">
+                         <h3><b>An Analysis of Internet Art.</b></h3>
+                         <p>In this artwork I see chaos, there are too many elements added,
+                            some in 2D and some in 3D, texts are overlapping on top of other texts, challenging the readability and the access to information. The artist used the colors neon pink and
+                             neon cyan for some texts that are overlapping, and according to a website called approval studio, those colors do not go together, because they are referred to as disturbing 
+                             and reckless, having multiple neon colors will have them fighting for the user’s attention. 
+                         Another color according to the article that does not go with neon pink is green, which is also present in the artwork.</p>
+                     </div>
                 </div>
-                <a class= "readMore" href="analysis.html">Read More</a>
             </div>
-            </div>
-            <a href="blogs.html" class="seeMore">More blogs</a>
+        </div>
     </section>
-    
+    <a href="blogs.html" class="seeMore">See More</a>
+    <footer>
+        <div class="icons">
+           <a href="https://www.facebook.com/kamo.jasmine"><i class="fab fa-facebook-f"></i></a> 
+           <a href="https://www.instagram.com/kamo_mafaesa/"><i class="fab fa-instagram"></i></a> 
+           <a href="https://www.linkedin.com/in/kamogelo-mafaesa-93a1681b5/"><i class="fab fa-linkedin-in"></i></a> 
+        </div>
+        <div class="copyright"><a href="" class="copyright">
+            <i class="far fa-copyright"></i>
+        </a> 2021-Student 1693173, Wits University, Johannesburg.
+        </div>
+        
+        
+    </footer>
   
 
 

@@ -17,14 +17,14 @@ hamburger.addEventListener("click", ()=>{
 const gif = document.querySelector('.giphy-embed');
 
 gif.addEventListener("mouseenter", (e) =>{
-    gif.style.transform = "translateX(10px)";
+    gif.style.transform = "translateZ(-100px)";
     gif.style.width = "60%";
     
 });
 
 gif.addEventListener("mouseleave", (e) =>{
-    gif.style.transform = "translateZ(-0px)";
+    gif.style.transform = "translateZ(100px)";
     gif.style.filter = "none";
-    gif.style.width = "";
+    gif.style.width = "80%";
 });
 
