@@ -1,3 +1,4 @@
+
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
@@ -11,8 +12,6 @@ hamburger.addEventListener("click", ()=>{
         link.classList.toggle("fade");
     });
 });
-
-
 //hover over gif
 const gif = document.querySelector('.giphy-embed');
 
@@ -22,9 +21,16 @@ gif.addEventListener("mouseenter", (e) =>{
     
 });
 
-gif.addEventListener("mouseleave", (e) =>{
-    gif.style.transform = "translateZ(100px)";
-    gif.style.filter = "none";
-    gif.style.width = "80%";
-});
+   
+    gif.addEventListener("mouseleave", (e) =>{
+        gif.style.transform = "translateZ(100px)";
+        gif.style.filter = "none";
+        gif.style.width = "80%";
+    });
+    
+ 
 
+
+
+
+ 

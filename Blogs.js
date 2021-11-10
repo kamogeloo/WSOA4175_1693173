@@ -55,18 +55,24 @@ function App(){
             />
             
             <Card
-            img = "animation-in-web-design.gif"
-            title= "The Role Of Aesthetics In Web Design."
-            description ="In this article, Thorlacius states that she uses the concept aesthetics to refer to visual, 
-            sound and interactive means of effect; she argues that there is always visual communication 
-            in websites, that every element that is included and displayed in the interface of a website 
-            communicates something to the user (Thorlacius, 2007, pg.63). The colors, the type of typography
-             that a designer uses, and even the placement of elements on a website, communicate something to 
-             the user; and it is for this reason that Thorlacius (2007) argues that it important for designer 
-             to have knowledge about visual communication. She argues that visual symbols are part our daily 
-             lives and that is why it is important for web designers to have knowledge of graphic effects and 
-             visual symbols (and semiotics) is crucial for designers,
-             for the communication to the users to be intentional (Thorlacius, 2007, pg.63)."
+            img = "grafitti.gif"
+            title= "What Is Net Art?"
+            description ="In this article I will be discussing a paper written by Ji Yong Park titled Design Principles
+             for Interactive User Experience Through Net Art. This article claims to define user interface principles
+              through user experiences in net art that will allow the designer to achieve user-centered design. 
+              Before we get into discussing the principles, I will first explore the concept of net art,
+             to find out what it is and what can and cannot be considered as net art."
+             a = "/netArt.html"
+            />
+            <Card
+            img = "abvh.gif"
+            title= "Analysis Of Internet Art."
+            description ="In this article I will be discussing a paper written by Ji Yong Park titled Design Principles
+             for Interactive User Experience Through Net Art. This article claims to define user interface principles
+              through user experiences in net art that will allow the designer to achieve user-centered design. 
+              Before we get into discussing the principles, I will first explore the concept of net art,
+             to find out what it is and what can and cannot be considered as net art."
+             a = "/analysisSecond.html"
             />
         </div>
     )
@@ -77,7 +83,7 @@ function Card(props){
         <div className ="cards">
            <div className="card-container" >
                 <div className = "card">
-               <img src ={props.img}/>
+              <a href= {props.a}> <img src ={props.img}/> </a>
                 <h2 className="card-title">{props.title}</h2>
                 <p className="card-description">{props.description}</p>
                <a className= "card-button" href={props.a}>View Full Blog</a>
